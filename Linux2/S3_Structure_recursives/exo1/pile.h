@@ -1,3 +1,10 @@
+typedef struct  {
+    int val;
+    struct Noeud* suivant;
+} Noeud;
+
+typedef Noeud* Pile;
+
 Pile initPile (); // qui renvoie une pile vide
 bool pileVide (Pile); // qui teste si la pile est vide
 bool push (Pile*, int); // qui renvoie vrai si l’entier a été placé sur la pile
