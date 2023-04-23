@@ -18,7 +18,7 @@ void run(void *argv)
   while (read(pipefd[0], &c, sizeof(char)) > 0) {
     putchar(toupper(c));
   }
-
+ 
   // 5/ On clôture le côté lecture du pipe
   ret = close(pipefd[0]);
   checkNeg(ret, "close error");
